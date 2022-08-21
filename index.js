@@ -8,8 +8,8 @@ function createBot()
     version: "1.18.2"
         })
         
-        //bot.on('error', (err) => console.log(err))
-        //bot.on('end', createBot)
+        bot.on('error', (err) => console.log(err))
+        bot.on('end', createBot)
     
         bot.once('spawn', () =>{
             bot.chat("/login dk19kaZo3mA")
